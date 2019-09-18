@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- a linha abaixo garante a compatibilidade com relação aos diversos tamanhos de tela -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Home - html5 css3 </title>
+    <meta name="description" content="Aprenda html5 e css3 de forma prática desenvolvendo passo a passo um site responsivo">
+    <link rel="shortcut icon" href="imagens/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <!--link com a biblioteca JQuery -->
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <a href="https://www.facebook.com/"><img src="imagens/face.png" title="facebook" alt="IconFace" id="face">
+            </a>
+            <a href="https://twitter.com/login?lang=pt"><img src="imagens/Twitter.png" title="Twitter" alt="IconTwitter"
+                    id="Twitter"> </a>
+            <a href="https://www.youtube.com/"><img src="imagens/tube.png" title="youtube" alt="Icontube" id="tube">
+            </a>
+            <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img
+                    src="imagens/mail.png" title="Gmail" alt="Iconmail" id="mail"> </a>
+            <a href="index.html"><img src="imagens/logo.png" title="html5 + css3" alt="html css3" id="logo" ></a>
+        </header>
+        <nav class="Menu">
+            <a href="#" class="Mobile">&#9776 Menu</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="#" class="Detalhes">Conteúdo</a>
+                    <ul>
+                        <li><a href="html5/html5.html">html5</a></li>
+                        <li><a href="css3/css3.html">css3</a></li>
+                    </ul>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+        </nav>
+        <section id="banner">
+            <h1>Primeiros passos com html5 e css3</h1>
+        </section>
+        <section id="heading">
+            <h2>Aprenda <span id="html5">html5</span> e <span id="css3">css3</span> de forma prática e divertida desenvolvendo passo a passo um site responsivo</h2>
+        </section>
+        <section id="destaque">
+            <div class="card">
+                <img src="imagens/html5.png" alt="html5">
+                <h3>html5</h3>
+                <p>html5 é a quinta versão da linguagem usada para a publucação de conteúdo na web</p>
+                <a href="">html5</a>
+            </div>
+            <div class="card">
+                <img src="imagens/css3.png" alt="css3">
+                <h3>css3</h3>
+                <p>css é a linguagem web usada para a definir como deve ser a formatação do conteúdo html</p>
+                <a href="">css3</a>
+
+            </div>
+            <div class="card">
+                <img src="imagens/projeto.png" alt="html5">
+                <h3>Projeto</h3>
+                <p>Acesse o meu canal no youtube para poder aprender a desenvolver este projeto passo a passo.</p>
+                <a href="#" target="_blank">Projeto</a>
+            </div>
+        </section>
+        <footer>
+            <p>©-09-07-2019 MRamos</p>
+            <p>Murillo Rodrigues De Almeida Ramos</p>
+
+        </footer>
+    </div>
+    <div id="selo">
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="CSS válido!" />
+            </a>
+        </p>
+    </div>
+    <script src="Scripts/fixamenu.js"></script>
+    <script src="Scripts/menuresponsivo.js"></script>
+    <script src="scripts/removeclick.js"></script>
+</body>
+
+</html>

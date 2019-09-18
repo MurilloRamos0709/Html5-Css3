@@ -1,0 +1,378 @@
+/**
+* Folha de estilo do site html5 + css3
+*@author Professor Murillo Ramos
+*/
+
+/************** Importando fontes ***************/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap');
+/************************** Principal *********************/
+
+/*o bloco abaixo compatibiliza os navegadores*/
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+
+    }
+
+
+Body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #dbdbcf;
+}
+
+#main{
+    max-width: 1024px;
+    background-color: #ffffff;
+    margin: 0 auto;    /* centraliza a div */
+    margin-top: 50px; /* box model */
+}
+
+
+/***********************icon***********************/
+
+#face{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 70px;
+    float: right;
+}
+#Twitter{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: -70px;
+    float: right;
+}
+#tube{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: -70px;
+    float: right;
+}
+#mail{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+   margin-right: -70px;
+    float: right;
+}
+
+
+/*********************** Header ******************/
+
+#logo{
+    margin-top: 15px;
+}
+
+header{
+background-color: gray;
+}
+
+header img{
+/* é possivel redimencionar a imagen diretamente pelo css */ 
+/* Não recomendado por questões de desempenho */
+width: 195px;
+height: 150px;
+margin-left: 85px;
+
+}
+
+/**************************** Menu ***********************/
+
+nav {
+    width: 100%;
+    max-width: 1024px;
+    position: absolute;
+}
+nav ul{
+    list-style: none;
+}
+nav > ul > li{
+    float: left;
+    width: 25%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #414141;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+nav ul li a:hover{
+    background: #5e5e5e;
+    transition: all 0.3s;
+}
+nav li ul{
+    display: none;
+}
+nav li:hover ul{
+ display: block;
+}
+
+.Detalhes:after{
+    content:' ';
+    border:5px solid transparent;
+    border-top-color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+.Mobile{
+    display: none;
+}
+.Fixar{
+    position: fixed;
+    top: 0;
+}
+
+/********************* Banner *****************/
+#banner{
+    margin-top: 52px;
+    height: 350px;
+    background-image: url('imagens/banner.jpg');
+    /*flexibilizando o layout para alinhamento vertical*/
+    display: flex;
+    align-items: center;
+}
+#banner h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #c0c0c0;
+    font-size: 4em;
+    text-transform: uppercase; /*maiúsculo*/
+}
+
+/*********************** Heading Line *****************/
+#heading{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+}
+
+#html5{
+    font-weight: 600; /*Negrito*/
+    color: #ff0000;
+}
+#css3{
+    font-weight: 600; 
+    color: #0e0ae9;
+
+}
+/********************Destaque ********************/
+
+#destaque{
+    max-width: 1024px;
+    height: 320px;
+}
+.card{
+    width: 30.8%;
+    height: 320px;
+    float: left;
+    margin-left: 1.7%;
+    border: 1px solid #494949;
+    position: relative;/*posicionamento dos botões*/
+    box-shadow: 1px 1px 1px 1px rgba(24, 24, 24, 0.6);
+}
+.card p{
+    padding: 10px;
+    
+}
+.card h3{
+    text-align: center;
+}
+.card p{
+    padding: 10px;
+}
+.card a{
+    width: 80px;
+    height: 30px;
+    background-color: #696969;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85em;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding-top: 7px;
+}
+/**************************** conteúdo *****************/
+.conteudo{
+    margin-top: 55px;
+    padding: 15px;
+}
+/**********************Formulário de contato*****************/
+#contato{
+    padding-top: 102px;
+    width: 70%;
+    margin: 0 auto;
+}
+#contato h1{
+    margin-bottom: 30px;
+}
+#contato input[type=text]{
+    width: 100%;
+    border: 1px solid #414141;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px; /*arredondar os cantos*/
+}
+#contato textarea{
+    width: 100%;
+    border: 1px solid #414141;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px 10px 40px 10px;
+    resize: none;  
+}
+#contato input[type=submit]{
+    background-color: #575757;
+    border: 1px solid #252525;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 25px 10px 25px;
+}
+
+/************************   Rodapé ***************/
+footer{
+    background-color: #414141;
+    margin-top: 50px;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.75em; /* responsividade ver tabela de conversão */
+}
+#selo{
+    max-width:1024px;
+    margin: 0 auto;
+    margin-top:15px;
+}
+#aula2{
+   padding: 10px;
+    width: 500px;
+    height: 500px;
+}
+#aula3{
+    padding: 10px;
+    width: 600px;
+    height: 500px;
+}
+#aula4{
+    padding: 10px;
+    width: 150px;
+    height: 130px;
+}
+#aula5{
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+}
+#imgcss{
+    padding: 10px;
+    width: 110px;
+    height: 140px;
+    margin-left: 25px;
+    margin-top: 0;
+}
+#cssdesc{
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+}
+#exemplocss{
+    padding: 10px;
+    width: 550px;
+    height: 400px;
+}
+#boxmodel{
+    padding: 10px;
+    width: 550px;
+    height: 400px;
+}
+#MRamos{
+    height: 300px;
+    width: 275px;
+}
+
+/******************* Tratamento Responsivo ***************/
+/********* Torna todas as imagens responsivas ***********/
+
+
+
+/* o bloco abbaixo, modifica o comportamento do css para telas com tamanho de até 480px */
+@media screen and (max-width: 480px){
+    
+    body{
+        margin: 0;
+    }
+    #main{
+        margin: 0;
+    }
+    /********************* Menu ********************/
+    .Mobile{
+        display: block;
+        background: #5e5e5e;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 15px;
+    }
+    nav{
+        z-index: 3; /*eleva 3 camadas*/
+    }
+
+    nav >ul >li{
+        float: none;
+        width: 100%;
+    }
+    nav ul{
+        display: none;
+    }
+    /********** melhorando UX (User eXperience) ************/
+    nav ul li a{
+        text-align: left;
+    }
+    nav li ul li{
+        background-color: #575757;
+    }
+    nav li ul li a{
+        background-color: #414141;
+        padding-left: 40px;
+    }
+    /*********************** banner**************************/
+
+    #banner{
+        height: 175px;
+    }
+    #banner h1{
+        font-size: 1.5em;
+    }
+    /************************ heading ************************/
+
+    #heading{
+        width: 90%;
+        padding: 20px;
+    }
+    #heading h2{
+        font-size: 1em;
+    }
+
+    /************************** cards *************************/
+    #destaque{
+        max-width: 315px;
+        margin: 0 auto;
+        height: auto;
+    }
+    .card{
+        float:none;
+        width: 100%;
+        height:320px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
